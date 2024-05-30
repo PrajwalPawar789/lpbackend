@@ -1,18 +1,701 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="view html5-player">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+
+        <link rel="dns-prefetch" href="https://media-s3-us-east-1.ceros.com"/>
+        <link rel="dns-prefetch" href="https://assets-s3-us-east-1.ceros.com"/>
+        <link rel="dns-prefetch" href="//themes.googleusercontent.com"/>
+
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="application/javascript" src="/webfont-1.6.3.js"></script>
+        <link rel="dns-prefetch" href="//fonts.googleapis.com"/>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : location.protocol + 'https://assets-s3-us-east-1.ceros.com/8.13.21/view.ceros.com/default/assets/player',
+            publicAssetsBaseUrl: '/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: 'https://api.ceros.com/a',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: {"media-s3-us-east-1.ceros.com":"ceros-media-s3-us-east-1","media-s3-us-west-1.ceros.com":"ceros-media-s3-us-west-1","media-s3-eu-west-1.ceros.com":"ceros-media-s3-eu-west-1"},
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.13.21',
+            rollbarMaxItems: 5,
+        isExported: false,
+            isStudio: false,
+
+            openGraphUrl: 'https://view.ceros.com/fis-global/2762962-transforming-debit-card-payments-for-a-new-generation',
+            accountSlug: 'fis-global',
+        gracePeriodExpired  : 1711670400 < Date.now() / 1000,
+            appSlug: 'mg',
+            issueAliasSlug: '2762962-transforming-debit-card-payments-for-a-new-generation',
+            issue: {"id":895281,"projectId":105717,"slug":"experience-659fd07f641f4","name":"Transforming debit card payments for a new generation","status":"published","creationDate":"2024-01-11T11:26:55.000Z","lastModifiedDate":"2024-01-26T13:44:08.000Z","deletionDate":null,"firstPublishedDate":"2024-01-26T13:44:21.000Z","wipExperienceVersionId":3725571,"publishedExperienceVersionId":3759033,"createdByMemberId":20425,"primaryIssueAliasId":1256133,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/fis-global\/studio-thumbnails\/page-659fd07794c67.jpg","importLinkShared":0,"lastPublishedDate":"2024-01-26T13:44:21.000Z","lastModifiedByMemberId":20425,"lastPublishedByMemberId":20425,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"659fd07f-c4535e9e7bd9d","title":"Transforming debit card payments for a new generation"},
+            docVersion: {"id":3759033,"experienceId":895281,"slug":"experience-version-65b3b73388934","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/fis-global\/doc-version-json\/v11\/experience-version-65b3b73388934.js","themingBackgroundImageUri":null,"seoTitleKeywords":"","seoMetaKeywords":"","seoMetaDescription":"","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/fis-global\/pages\/page-65b3b73388943","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/fis-global\/page-thumbnails\/2024\/01\/26\/17820a4499675629a8a1bbef189605b8\/page-thumbnail.jpg?imageOpt=1&crop=870,489,x0,y0"},{"uri":"\/v1\/account\/fis-global\/pages\/page-65b3b733ae062","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/fis-global\/page-thumbnails\/2024\/01\/26\/faad2dc4fea650a983dba8627b28419d\/page-thumbnail.jpg?imageOpt=1&crop=870,489,x0,y0"},{"uri":"\/v1\/account\/fis-global\/pages\/page-65b3b733d13e9","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/fis-global\/page-thumbnails\/2024\/01\/26\/08809e77b182da69f26d218c713d96dc\/page-thumbnail.jpg?imageOpt=1&crop=870,489,x0,y0"},{"uri":"\/v1\/account\/fis-global\/pages\/page-65b3b733ed144","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/fis-global\/page-thumbnails\/2024\/01\/26\/eb182702e1940bb3f0c40a0c9dc33d1e\/page-thumbnail.jpg?imageOpt=1&crop=870,489,x0,y0"},{"uri":"\/v1\/account\/fis-global\/pages\/page-65b3b73417a1b","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/fis-global\/page-thumbnails\/2024\/01\/26\/ae28fd9057b16dbfcce8a67626283c39\/page-thumbnail.jpg?imageOpt=1&crop=870,489,x0,y0"},{"uri":"\/v1\/account\/fis-global\/pages\/page-65b3b734384f4","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/fis-global\/page-thumbnails\/2024\/01\/26\/dd21605386009e0db48b8606ebbad3c6\/page-thumbnail.jpg?imageOpt=1&crop=870,489,x0,y0"},{"uri":"\/v1\/account\/fis-global\/pages\/page-65b3b73457226","overrides":{"mobile":{"initiallyDisabled":false}},"initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/fis-global\/page-thumbnails\/2024\/01\/26\/f733217dd8c7af79221b6ce9bbe2c297\/page-thumbnail.jpg?imageOpt=1&crop=870,489,x0,y0"},{"uri":"\/v1\/account\/fis-global\/pages\/page-65b3b7347b7bf","overrides":{"mobile":{"initiallyDisabled":false}},"initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/fis-global\/page-thumbnails\/2024\/01\/26\/ca88e5b5faf25efe9839ec3b6c6b0d93\/page-thumbnail.jpg?imageOpt=1&crop=870,489,x0,y0"},{"uri":"\/v1\/account\/fis-global\/pages\/page-65b3b73499b78","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/fis-global\/page-thumbnails\/2024\/01\/26\/062b2f0bed3b59bb377a089660a946b2\/page-thumbnail.jpg?imageOpt=1&crop=870,489,x0,y0"},{"uri":"\/v1\/account\/fis-global\/pages\/page-65b3b734bad80","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/fis-global\/page-thumbnails\/2024\/01\/26\/ededf7bc67b01a2d0c6d98bc98bb01f7\/page-thumbnail.jpg?imageOpt=1&crop=870,489,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2024-01-26T13:44:21.000Z","modificationDate":"2024-01-26T13:44:21.000Z","publishedDate":"2024-01-26T13:44:19.000Z","committedByMemberId":20425,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"paragraph","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"lineHeightCompatibility":"no_baseline_offset","layoutSettings":{"layoutPrimarySetting":"device-type","maxTabletWidthBreakpoint":1280,"maxMobileWidthBreakpoint":800,"deviceTypeMissingVariantFallback":"desktop"},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":0,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#2A2F32","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|2653e898-a3de-11e9-985c-0e55d9bc9e68":{"familyName":"Source Sans Pro","familyGuid":"Uploaded|6960e669-9f48-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|2653e898-a3de-11e9-985c-0e55d9bc9e68","variantName":"Bold","cssFamilyName":"Source Sans Pro-Bold-QwHlKorL","cssFileURL":"https:\/\/media-s3-us-east-1.ceros.com\/fis-global\/fonts\/2019\/07\/11\/13283e79-1611-4260-9ed0-3d8fbbe6cf01\/sourcesanspro-bold.css","api":"Uploaded","woffFileURL":"https:\/\/media-s3-us-east-1.ceros.com\/fis-global\/fonts\/2019\/07\/11\/a7d5001c-b7ee-4a3b-ae93-5a3586ceade2\/sourcesanspro-bold.woff"},"Uploaded|69611181-9f48-11e9-985c-0e55d9bc9e68":{"familyName":"Source Sans Pro","familyGuid":"Uploaded|6960e669-9f48-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|69611181-9f48-11e9-985c-0e55d9bc9e68","variantName":"Regular","cssFamilyName":"Source Sans Pro-Regula-hmOZPTfM","cssFileURL":"https:\/\/media-s3-us-east-1.ceros.com\/fis-global\/fonts\/2019\/07\/05\/fdd2dabe-85f4-4d0b-8824-04953fefc8a3\/sourcesanspro-regular.css","api":"Uploaded","woffFileURL":"https:\/\/media-s3-us-east-1.ceros.com\/fis-global\/fonts\/2019\/07\/05\/df146446-bfb4-4d3d-96b1-24945db8fb6d\/sourcesanspro-regular.woff"},"Uploaded|42ff7d27-c569-11ec-89a4-0ea31dcec4dd":{"familyName":"Clan Offc Pro Ultra","familyGuid":"Uploaded|744a7328-a194-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":787,"variantGuid":"Uploaded|42ff7d27-c569-11ec-89a4-0ea31dcec4dd","variantName":"CLAN","cssFamilyName":"Clan Offc Pro Ultra-CL-Cl8uFINX","cssFileURL":"https:\/\/media-s3-us-east-1.ceros.com\/fis-global\/fonts\/2022\/04\/26\/1173f60d-37b6-4ff8-9933-2abb70dcc674\/clan.css","api":"Uploaded","woffFileURL":"https:\/\/media-s3-us-east-1.ceros.com\/fis-global\/fonts\/2022\/04\/26\/5945b210-a32c-47c0-9b49-1b203d93e165\/clan.woff"},"Uploaded|744aacae-a194-11e9-985c-0e55d9bc9e68":{"familyName":"Clan Offc Pro Ultra","familyGuid":"Uploaded|744a7328-a194-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":787,"variantGuid":"Uploaded|744aacae-a194-11e9-985c-0e55d9bc9e68","variantName":"FontFont - Clan Offc Pro Ultra","cssFamilyName":"Clan Offc Pro Ultra-Fo-wVH5ICtL","cssFileURL":"https:\/\/media-s3-us-east-1.ceros.com\/fis-global\/fonts\/2019\/07\/08\/71c88947-9433-4299-8613-0d63073d1588\/fontfont-clan-offc-pro-ultra.css","api":"Uploaded","woffFileURL":"https:\/\/media-s3-us-east-1.ceros.com\/fis-global\/fonts\/2019\/07\/08\/dfb7e5c1-7bb2-4652-8619-a54e90648be3\/fontfont-clan-offc-pro-ultra.woff"},"Uploaded|f3adb8a8-9df9-11eb-aa23-1211e90532b6":{"familyName":"Source Sans Pro SemiBold","familyGuid":"Uploaded|fb53d985-9f27-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|f3adb8a8-9df9-11eb-aa23-1211e90532b6","variantName":"1SourceSansPro-SemiBold","cssFamilyName":"Source Sans Pro SemiBo-rc6EFLrw","cssFileURL":"https:\/\/media-s3-us-east-1.ceros.com\/fis-global\/fonts\/2021\/04\/15\/ffdd0aa4-4772-4a1c-aaf9-70c763288a13\/1sourcesanspro-semibold.css","api":"Uploaded","woffFileURL":"https:\/\/media-s3-us-east-1.ceros.com\/fis-global\/fonts\/2021\/04\/15\/7082b39b-58ce-4e2f-ad1a-9877102d2ce4\/1sourcesanspro-semibold.woff"},"Uploaded|fae71c4c-9f27-11e9-985c-0e55d9bc9e68":{"familyName":"Source Sans Pro Light","familyGuid":"Uploaded|fa77858d-9f27-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|fae71c4c-9f27-11e9-985c-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Source Sans Pro Light--Tj9Cuhxw","cssFileURL":"https:\/\/media-s3-us-east-1.ceros.com\/fis-global\/fonts\/2019\/07\/05\/b19fc413-54ce-46be-820e-34d1ca9a3273\/sourcesanspro-light.css","api":"Uploaded","woffFileURL":"https:\/\/media-s3-us-east-1.ceros.com\/fis-global\/fonts\/2019\/07\/05\/3dbfd58e-79b6-4a7b-a54f-823758b6f18d\/sourcesanspro-light.woff"}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : false,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#2A2F32',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Protected Preview":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":true,"New Text Tool":true,"Studio API":false,"SSO Protected Experiences":false,"Studio Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":true,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":true,"(New Text Tool) Columns":true,"Gemma":false,"App Switcher":true,"Experience Sharing":true,"Open in MarkUp":true,"Create Account from Login":true,"Individual Accounts":true,"AI Templates":true,"New Text Tool Experience Converter (requires New Text Tool)":true,"Studio Lite":true,"Intercom Support Chat":true,"Editor Sign Up":false,"Beamer":true,"Showcase Experience":false,"Component Library":false,"SDR Editor Invite":false,"Force Protected Experiences":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":true,"containerID":"GTM-KLKPGGX","trackPageViewsForStandaloneExperiences":true,"eventCategory":"ceros-event","trackClicks":true,"clickEventAction":"ceros-click","trackHovers":true,"hoverEventAction":"ceros-hover","initializeGTMForEmbeddedExperiences":true},
+                marketoTracker: {enabled: true, accountId: '650-KGE-239' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Transforming debit card payments for a new generation</title>
+
+        <link rel="alternate" type="application/json+oembed"
+              href="https://view.ceros.com/oembed?url=https%3A%2F%2Fview.ceros.com%2Ffis-global%2F2762962-transforming-debit-card-payments-for-a-new-generation"
+              title="Transforming debit card payments for a new generation"/>
+
+        <link rel="canonical" href="https://view.ceros.com/fis-global/2762962-transforming-debit-card-payments-for-a-new-generation"/>
+
+
+    <meta property="og:title" content="Transforming debit card payments for a new generation"/>
+        <meta property="og:image" content="https://media-s3-us-east-1.ceros.com/fis-global/page-thumbnails/2024/01/26/17820a4499675629a8a1bbef189605b8/page-thumbnail.jpg?imageOpt=1&crop=870,489,x0,y0"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content="https://view.ceros.com/fis-global/2762962-transforming-debit-card-payments-for-a-new-generation"/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Transforming debit card payments for a new generation">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="https://media-s3-us-east-1.ceros.com/fis-global/page-thumbnails/2024/01/26/17820a4499675629a8a1bbef189605b8/page-thumbnail.jpg?imageOpt=1&crop=870,489,x0,y0">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "//media-s3-us-east-1.ceros.com/fis-global/doc-version-json/v11/experience-version-65b3b73388934.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_fis_global_document_versions_experience_version_65b3b73388934",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+    <!-- BEGIN MARKETO INTEGRATION HTML -->
+    <script>
+        (function() {
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = '//munchkin.marketo.net/munchkin.js';
+            //Makerto init was moved to MarketoAnalyticsTracker.js
+            document.getElementsByTagName('head')[0].appendChild(s);
+        })();
+    
+    </script>
+    <!-- END MARKETO INTEGRATION HTML -->
+
+        <script>
+        var _rollbarConfig = {
+            accessToken: window.cerosContext.rollbarPlayerAccessKey,
+            captureUncaught: true,
+            payload: {
+                environment: window.cerosContext.deploymentName,
+                client: {
+                    javascript: {
+                        source_map_enabled: true,
+                        code_version: window.cerosContext.appVersion,
+                        // Optionally have Rollbar guess which frames the error was thrown from
+                        // when the browser does not provide line and column numbers.
+                        guess_uncaught_frames: true
+                    }
+                }
+            },
+        
+            reportLevel: "warning",
+            uncaughtErrorLevel: "error",
+            maxItems : window.cerosContext.rollbarMaxItems
+        };
+        
+        // Rollbar Snippet
+        !function(r){function o(n){if(e[n])return e[n].exports;var t=e[n]={exports:{},id:n,loaded:!1};return r[n].call(t.exports,t,t.exports,o),t.loaded=!0,t.exports}var e={};return o.m=r,o.c=e,o.p="",o(0)}([function(r,o,e){"use strict";var n=e(1),t=e(4);_rollbarConfig=_rollbarConfig||{},_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||"https://cdnjs.cloudflare.com/ajax/libs/rollbar.js/2.2.10/rollbar.min.js",_rollbarConfig.async=void 0===_rollbarConfig.async||_rollbarConfig.async;var a=n.setupShim(window,_rollbarConfig),l=t(_rollbarConfig);window.rollbar=n.Rollbar,a.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,l)},function(r,o,e){"use strict";function n(r){return function(){try{return r.apply(this,arguments)}catch(r){try{console.error("[Rollbar]: Internal error",r)}catch(r){}}}}function t(r,o){this.options=r,this._rollbarOldOnError=null;var e=s++;this.shimId=function(){return e},window&&window._rollbarShims&&(window._rollbarShims[e]={handler:o,messages:[]})}function a(r,o){var e=o.globalAlias||"Rollbar";if("object"==typeof r[e])return r[e];r._rollbarShims={},r._rollbarWrappedError=null;var t=new p(o);return n(function(){o.captureUncaught&&(t._rollbarOldOnError=r.onerror,i.captureUncaughtExceptions(r,t,!0),i.wrapGlobals(r,t,!0)),o.captureUnhandledRejections&&i.captureUnhandledRejections(r,t,!0);var n=o.autoInstrument;return o.enabled!==!1&&(void 0===n||n===!0||"object"==typeof n&&n.network)&&r.addEventListener&&(r.addEventListener("load",t.captureLoad.bind(t)),r.addEventListener("DOMContentLoaded",t.captureDomContentLoaded.bind(t))),r[e]=t,t})()}function l(r){return n(function(){var o=this,e=Array.prototype.slice.call(arguments,0),n={shim:o,method:r,args:e,ts:new Date};window._rollbarShims[this.shimId()].messages.push(n)})}var i=e(2),s=0,d=e(3),c=function(r,o){return new t(r,o)},p=d.bind(null,c);t.prototype.loadFull=function(r,o,e,t,a){var l=function(){var o;if(void 0===r._rollbarDidLoad){o=new Error("rollbar.js did not load");for(var e,n,t,l,i=0;e=r._rollbarShims[i++];)for(e=e.messages||[];n=e.shift();)for(t=n.args||[],i=0;i<t.length;++i)if(l=t[i],"function"==typeof l){l(o);break}}"function"==typeof a&&a(o)},i=!1,s=o.createElement("script"),d=o.getElementsByTagName("script")[0],c=d.parentNode;s.crossOrigin="",s.src=t.rollbarJsUrl,e||(s.async=!0),s.onload=s.onreadystatechange=n(function(){if(!(i||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState)){s.onload=s.onreadystatechange=null;try{c.removeChild(s)}catch(r){}i=!0,l()}}),c.insertBefore(s,d)},t.prototype.wrap=function(r,o,e){try{var n;if(n="function"==typeof o?o:function(){return o||{}},"function"!=typeof r)return r;if(r._isWrap)return r;if(!r._rollbar_wrapped&&(r._rollbar_wrapped=function(){e&&"function"==typeof e&&e.apply(this,arguments);try{return r.apply(this,arguments)}catch(e){var o=e;throw"string"==typeof o&&(o=new String(o)),o._rollbarContext=n()||{},o._rollbarContext._wrappedSource=r.toString(),window._rollbarWrappedError=o,o}},r._rollbar_wrapped._isWrap=!0,r.hasOwnProperty))for(var t in r)r.hasOwnProperty(t)&&(r._rollbar_wrapped[t]=r[t]);return r._rollbar_wrapped}catch(o){return r}};for(var u="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleUnhandledRejection,captureEvent,captureDomContentLoaded,captureLoad".split(","),f=0;f<u.length;++f)t.prototype[u[f]]=l(u[f]);r.exports={setupShim:a,Rollbar:p}},function(r,o){"use strict";function e(r,o,e){if(r){var t;"function"==typeof o._rollbarOldOnError?t=o._rollbarOldOnError:r.onerror&&!r.onerror.belongsToShim&&(t=r.onerror,o._rollbarOldOnError=t);var a=function(){var e=Array.prototype.slice.call(arguments,0);n(r,o,t,e)};a.belongsToShim=e,r.onerror=a}}function n(r,o,e,n){r._rollbarWrappedError&&(n[4]||(n[4]=r._rollbarWrappedError),n[5]||(n[5]=r._rollbarWrappedError._rollbarContext),r._rollbarWrappedError=null),o.handleUncaughtException.apply(o,n),e&&e.apply(r,n)}function t(r,o,e){if(r){"function"==typeof r._rollbarURH&&r._rollbarURH.belongsToShim&&r.removeEventListener("unhandledrejection",r._rollbarURH);var n=function(r){var e=r.reason,n=r.promise,t=r.detail;!e&&t&&(e=t.reason,n=t.promise),o&&o.handleUnhandledRejection&&o.handleUnhandledRejection(e,n)};n.belongsToShim=e,r._rollbarURH=n,r.addEventListener("unhandledrejection",n)}}function a(r,o,e){if(r){var n,t,a="EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");for(n=0;n<a.length;++n)t=a[n],r[t]&&r[t].prototype&&l(o,r[t].prototype,e)}}function l(r,o,e){if(o.hasOwnProperty&&o.hasOwnProperty("addEventListener")){for(var n=o.addEventListener;n._rollbarOldAdd&&n.belongsToShim;)n=n._rollbarOldAdd;var t=function(o,e,t){n.call(this,o,r.wrap(e),t)};t._rollbarOldAdd=n,t.belongsToShim=e,o.addEventListener=t;for(var a=o.removeEventListener;a._rollbarOldRemove&&a.belongsToShim;)a=a._rollbarOldRemove;var l=function(r,o,e){a.call(this,r,o&&o._rollbar_wrapped||o,e)};l._rollbarOldRemove=a,l.belongsToShim=e,o.removeEventListener=l}}r.exports={captureUncaughtExceptions:e,captureUnhandledRejections:t,wrapGlobals:a}},function(r,o){"use strict";function e(r,o){this.impl=r(o,this),this.options=o,n(e.prototype)}function n(r){for(var o=function(r){return function(){var o=Array.prototype.slice.call(arguments,0);if(this.impl[r])return this.impl[r].apply(this.impl,o)}},e="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleUnhandledRejection,_createItem,wrap,loadFull,shimId,captureEvent,captureDomContentLoaded,captureLoad".split(","),n=0;n<e.length;n++)r[e[n]]=o(e[n])}e.prototype._swapAndProcessMessages=function(r,o){this.impl=r(this.options);for(var e,n,t;e=o.shift();)n=e.method,t=e.args,this[n]&&"function"==typeof this[n]&&("captureDomContentLoaded"===n||"captureLoad"===n?this[n].apply(this,[t[0],e.ts]):this[n].apply(this,t));return this},r.exports=e},function(r,o){"use strict";r.exports=function(r){return function(o){if(!o&&!window._rollbarInitialized){r=r||{};for(var e,n,t=r.globalAlias||"Rollbar",a=window.rollbar,l=function(r){return new a(r)},i=0;e=window._rollbarShims[i++];)n||(n=e.handler),e.handler._swapAndProcessMessages(l,e.messages);window[t]=n,window._rollbarInitialized=!0}}}}]);
+        // End Rollbar Snippet
+        </script>
+
+        <link rel="shortcut icon" href="/favicon-empty.ico"/>
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="https://assets-s3-us-east-1.ceros.com/8.13.21/view.ceros.com/default/assets/player/shared/libs/require/require-min.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="https://assets-s3-us-east-1.ceros.com/8.13.21/view.ceros.com/default/assets/player/applications/html5-player/bootstrap-optimized.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="https://assets-s3-us-east-1.ceros.com/8.13.21/view.ceros.com/default/assets/player/applications/html5-player/css/html5-player.css"/>
+
+    <style>
+        body {
+            background-color: #2A2F32;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #2A2F32;
+        }
+    </style>
+
 </head>
 <body>
-    <form action="" method="post">
-        <input name="First name" placeholder="First name"/>
-        <input name="Last name" placeholder="Last name"/>
-        <input name="Business email" placeholder="Business email"/>
-        <input name="Company name" placeholder="Company name"/>
-        <input name="Phone" placeholder="Phone"/>
-        <input name="Address" placeholder="Address"/>
-        <input name="Country" placeholder="Country"/>
-    </form>
+
+
+        <!-- BEGIN GOOGLE TAG MANAGER INTEGRATION HTML -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-KLKPGGX"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <script>
+
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KLKPGGX');
+
+        </script>
+        <!-- END GOOGLE TAG MANAGER INTEGRATION HTML -->
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">Kickstart your strategy</p>
+<p class="text-component">From basic banking staple to strategic growth driver</p>
+<p class="text-component">TRANSFORMING DEBIT CARD PAYMENTS FOR A NEW GENERATION</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/08/07/56c96467752936300b41e8913486abec/fis-c-rgb.png" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/28c480ac77f6e42bb3828b13b8f65e0c/gettyimages-614736586.jpg" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">2</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/08/07/56c96467752936300b41e8913486abec/fis-c-rgb.png" alt=""  class="image-component"/>
+<p class="text-component">contents</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/ad1d1c050615431978e4ff1873d2afb1/home-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Welcome to a new way to process debit cards</p>
+<p class="text-component">9</p>
+<p class="text-component">A checklist for modern payments</p>
+<p class="text-component">8</p>
+<p class="text-component">Evolve your working environment</p>
+<p class="text-component">7</p>
+<p class="text-component">Engage with customers as they want you to</p>
+<p class="text-component">6</p>
+<p class="text-component">Understand what’s at stake</p>
+<p class="text-component">5</p>
+<p class="text-component">Mind the generation gap</p>
+<p class="text-component">4</p>
+<p class="text-component">Make debit cards add up for your bank</p>
+<p class="text-component">3</p>
+<p class="text-component">TRANSFORMING DEBIT CARD PAYMENTS FOR A NEW GENERATION</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/08/24/8c5df9ea95ae4865a4b1a3c2ecf72958/gettyimages-1297979422.jpg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/ad1d1c050615431978e4ff1873d2afb1/home-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/08/24/8c5df9ea95ae4865a4b1a3c2ecf72958/gettyimages-1297979422.jpg" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">TRANSFORMING DEBIT CARD PAYMENTS FOR A NEW GENERATION</p>
+<p class="text-component">MAKE DEBIT CARDS ADD UP FOR YOUR BANK</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2020/11/09/9b664bf422138f915d671e870b05e68c/asset-177.png" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/07/15/07d5dbea3ca4ba714517be547c2da1fc/quote-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Did you know?</p>
+<p class="text-component">Jonathan Silverman
+Director of insurance solutions, Microsoft</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/07/15/07d5dbea3ca4ba714517be547c2da1fc/quote-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/07/15/07d5dbea3ca4ba714517be547c2da1fc/quote-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Insurers are recognizing the value of having access to unlimited compute capacity for risk modeling and . . . making substantial cost savings with infrastructure related to the risk modeling workload.</p>
+<p class="text-component">“The pandemic led to an increase of debit card payments worldwide, as contactless purchases gained appeal. In Germany… girocard payments jumped by nearly €1 billion over the course of 2020, an increase of 21.7% from 2019. In the Netherlands, debit card transactions accounted for 79% of all retail purchases in 2020, overtaking cash payments in all sectors for the first time. Debit card payment volumes jumped by upwards of 20% in the U.S. and the U.K. as well.”</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/11/11bb913b0635529a58b6c420ada6eb5e/processed-svg-exclamation-point-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">3</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/08/07/56c96467752936300b41e8913486abec/fis-c-rgb.png" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/14/d9c87fe86524d3a66eaa76fa7c0b5fdc/asset-16.png" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/14/191138c05bc33565e837f72b0248e75d/asset-17.png" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/14/e48a0b8a27dbaffde577d392932f9abf/asset-18.png" alt=""  class="image-component"/>
+<p class="text-component">Dr. Bernardo Bátiz Lazo, Professor of Fintech History and Global Trade, Northumbria University</p>
+<p class="text-component">What if debit could help you strategically drive growth?</p>
+<p class="text-component">For consumers around the world, debit cards have long been a mainstay of the banking and payments experience. But when they debuted in the 1970s, the concept of paying directly from your bank account was nothing short of revolutionary.
+
+Until the debit card, no payment method – other than cash – could show retailers in real time that customers truly had the funds to cover their transaction. 
+
+In the 1990s, debit cards soared in popularity alongside the worldwide adoption of interconnected ATM networks. Then, as contactless payments became the norm, use of debit cards only continued to increase – even since the rise of mobile payment apps. 
+
+So, it’s easy to take debit cards for granted and see them as just another mandatory banking service. But what if they could help you win over a new generation of customers?</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/14/d4a6d8da4b707a414649221be6e35ee2/alert-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Insurance companies are more aware than ever of the wealth of information at their disposal. Their ability to extract value from data using advanced analytics has become critical to competitive advantage. </p>
+<p class="text-component">For actuaries, the pressure is on to gain greater insights from big data and rapidly transform modeling results into business intelligence.</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/a4cffffd91bfe9852dc2bc483cd00d4b/3.png" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/08/07/56c96467752936300b41e8913486abec/fis-c-rgb.png" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/14/6052e3838db3e78a37e8c5b13e049d68/close-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/ad1d1c050615431978e4ff1873d2afb1/home-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/ad1d1c050615431978e4ff1873d2afb1/home-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component"> 1 ReThink Quarterly, How debit cards changed our lives, 2022</p></div>
+            <div class="page"><img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2020/11/09/9b664bf422138f915d671e870b05e68c/asset-177.png" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/07/15/07d5dbea3ca4ba714517be547c2da1fc/quote-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Rick Yuan
+Head of actuarial modeling and transformation, AIA Group</p>
+<p class="text-component">We needed to run a projection tens of thousands of times to come out with a range of possibilities. One solution was to purchase more hardware, but the obvious winner was move to the public cloud. The beauty is you can tap that capacity when you need it and switch it off when you’ve finished the calculation.</p>
+<p class="text-component">MIND THE GENERATION GAP</p>
+<p class="text-component">88%</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/11/efacb8c33c3204c74c9a073fcc346a0c/processed-svg-exclamation-point-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">4</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/08/07/56c96467752936300b41e8913486abec/fis-c-rgb.png" alt=""  class="image-component"/>
+<p class="text-component">TRANSFORMING DEBIT CARD PAYMENTS FOR A NEW GENERATION</p>
+<p class="text-component">It’s time for a modern debit strategy, in three clear steps…</p>
+<p class="text-component">As a modern bank, you face a difficult question when it comes to customers. Namely, how do you strike a balance between retaining your loyal older account holders and attracting a new generation?
+
+For continued growth, it’s increasingly critical that banks boost their appeal to a younger audience: not only Millennials, but also Generation Z. 
+
+By 2030, Gen Z’s income is set to grow 400% to $33 trillion and will account for more than a quarter of global earnings. 
+
+
+As the first digital natives, Gen Z account holders have high expectations of the banking experience. With the right approach to debit, you could exceed these standards, delight the next generation of customers and keep your current customers happy, too. 
+
+Critically, Gen Zers are also infrequent users of credit. With many simply not qualifying for credit solutions, their typically low credit score can affect their ability to buy big-ticket purchases like a car. So, it’s increasingly important to be able to mine your debit data for insight on Gen Z behavior, preferences and creditworthiness.
+
+ But disparate tools, disjointed data and unconnected interfaces can stand in your way – and make you even less relevant to your target market.</p>
+<p class="text-component">88% of bank managers believe they understand the needs of Gen Z account holders but 34% of Gen Z do not agree that traditional banks understand their needs.</p>
+<p class="text-component">46% of Gen Zers are stressed out all or most of the time, mostly about their long-term financial future and their day-to-day finances.</p>
+<p class="text-component">With so much costly, inflexible IT to manage, your on-site infrastructure could be holding you back.</p>
+<p class="text-component">Did you know?</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/14/d4a6d8da4b707a414649221be6e35ee2/alert-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/057364fdbe330a96a6cb9728894fff66/2.png" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/07/15/07d5dbea3ca4ba714517be547c2da1fc/quote-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/07/15/07d5dbea3ca4ba714517be547c2da1fc/quote-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/08/07/56c96467752936300b41e8913486abec/fis-c-rgb.png" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/14/6052e3838db3e78a37e8c5b13e049d68/close-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/ad1d1c050615431978e4ff1873d2afb1/home-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/ad1d1c050615431978e4ff1873d2afb1/home-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">46%</p>
+<p class="text-component">Source: IBM, How banks can cater to Gen Z customers, December 2022</p>
+<p class="text-component">Source: Deloitte, 2023 Gen Z and Millennial Survey, June 2023</p>
+<p class="text-component">2</p>
+<p class="text-component">Behind these big numbers lies a golden opportunity for banks.</p>
+<p class="text-component">2 GfK, A fresh look at Gen Z and Millennials, February 2023</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/635c59496ba1f3f1f9d9e2aa947610b0/gettyimages-1307770579.jpg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/635c59496ba1f3f1f9d9e2aa947610b0/gettyimages-1307770579.jpg" alt=""  class="image-component"/></div>
+            <div class="page"><img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2020/11/09/9b664bf422138f915d671e870b05e68c/asset-177.png" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/07/15/07d5dbea3ca4ba714517be547c2da1fc/quote-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">UNDERSTAND WHAT’S AT STAKE</p>
+<p class="text-component">30%</p>
+<p class="text-component">43%</p>
+<p class="text-component">David Elliott
+Architecture manager for financial services, Amazon Web Services</p>
+<p class="text-component">For insurers, the question isn’t "if" (they will migrate existing applications to the cloud) – it’s how fast they can move and what are they going to move first?</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/11/548a391d2ab6147bbe6d97637eeee1e7/processed-svg-exclamation-point-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">5</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/08/07/56c96467752936300b41e8913486abec/fis-c-rgb.png" alt=""  class="image-component"/>
+<p class="text-component">TRANSFORMING DEBIT CARD PAYMENTS FOR A NEW GENERATION</p>
+<p class="text-component">Are you ready to join the highest flyers?</p>
+<p class="text-component">Deliver real-time data on debit activity and portfolio profitability.</p>
+<p class="text-component">As an insurance risk manager, where do you stand on the cloud? </p>
+<p class="text-component">You can’t do the best for your debit business without a clear, up-to-date view of the risks, rewards and opportunities it presents.
+
+And you can’t get that comprehensive visibility from multiple disconnected systems and spreadsheets. 
+
+For informed decision making, risk management and compliance, you need ways to turn raw data into real intelligence – fast.</p>
+<p class="text-component">But beyond lockdown conditions, there are more reasons than ever to run your organization’s most powerful systems in the cloud.</p>
+<p class="text-component">In 2020, unprecedented global circumstances have shown us all the benefits of hosted IT for business continuity and remote working. </p>
+<p class="text-component">Did you know?</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/14/d4a6d8da4b707a414649221be6e35ee2/alert-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/09/22/e69aabc3934cd12630db723cf18b1f9b/gettyimages-1169108801.jpg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/07/15/07d5dbea3ca4ba714517be547c2da1fc/quote-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/07/15/07d5dbea3ca4ba714517be547c2da1fc/quote-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/08/07/56c96467752936300b41e8913486abec/fis-c-rgb.png" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/14/6052e3838db3e78a37e8c5b13e049d68/close-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/ad1d1c050615431978e4ff1873d2afb1/home-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/ad1d1c050615431978e4ff1873d2afb1/home-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">GET ACTIONABLE INSIGHTS FOR DEBIT CARD MANAGEMENT</p>
+<p class="text-component">Base decisions on facts and real-time intelligence.</p>
+<p class="text-component">Uncover and analyze previously inaccessible data.</p>
+<p class="text-component">Gain a consolidated view of customer and market data.</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/01/20/521b03b320a1caa6d53a49644030325e/image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/01/20/9b3b649e00272e0702743cbf47912065/image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/01/20/ec1e2ad7d54f754c9d403234cb66022c/image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/3c15c47ceb6e4cf1b38e1177de2bc4e5/layer_0-56.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/6cda6c9f307c4cf4b18ea922f0656932/layer_0-55.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/a6600772321445d684e78a75bc61aaf2/layer_0-54.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/5f87bf895cc24069b5a1fd8bab30edfa/layer_0-53.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/780c2f03d1144b61a65a94055074a476/layer_0-52.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/70f1d1d7a6eb4cc39c6aada487de395e/layer_0-51.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/1969123663b04e199eb252fe5f0007a1/layer_0-50.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/29509854dbe34670ac240e7b489f9213/layer_0-49.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/7fd7a3799c3e446cbf4d0e737e7a713d/layer_0-48.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/31b7ed02c75444e38d2aa01d7a67b30f/layer_0-47.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/19/f9466a8290154288a163b487ae339c21/layer_0-24.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/19/33363272783b48578b477032689c56df/layer_0-23.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/19/8ff2928c35bb48d58ce17c5da14cb244/layer_0-22.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/19/5befea39ca4f41758a66fab5d8aaaa32/layer_0-21.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/19/b8d9f4a07c474d26ac83bf467c2fa1be/layer_0-20.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/19/9d4c16bbc5ea4c9196c0e099f24b39fa/layer_0-19.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/bd6d641ae5194e1cbeec619d5b9e0c57/layer_0-41.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/ff1b5ff75a89466dbc1d8ffaa5a0bffa/layer_0-40.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/65eb9b4d577c40688b3eb8a107ce2ade/layer_0-39.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/2ef225f51b03425fbc9dea589900b8c2/layer_0-38.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/378d52a6b5bd48bfa2069bfbee287620/layer_0-37.svg" alt=""  class="image-component"/>
+<p class="text-component">Deliver real-time data on debit activity and portfolio profitability.</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/01/20/521b03b320a1caa6d53a49644030325e/image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/01/20/9b3b649e00272e0702743cbf47912065/image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/01/20/ec1e2ad7d54f754c9d403234cb66022c/image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/3c15c47ceb6e4cf1b38e1177de2bc4e5/layer_0-56.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/6cda6c9f307c4cf4b18ea922f0656932/layer_0-55.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/a6600772321445d684e78a75bc61aaf2/layer_0-54.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/5f87bf895cc24069b5a1fd8bab30edfa/layer_0-53.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/780c2f03d1144b61a65a94055074a476/layer_0-52.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/70f1d1d7a6eb4cc39c6aada487de395e/layer_0-51.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/1969123663b04e199eb252fe5f0007a1/layer_0-50.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/29509854dbe34670ac240e7b489f9213/layer_0-49.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/7fd7a3799c3e446cbf4d0e737e7a713d/layer_0-48.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/31b7ed02c75444e38d2aa01d7a67b30f/layer_0-47.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/bd6d641ae5194e1cbeec619d5b9e0c57/layer_0-41.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/ff1b5ff75a89466dbc1d8ffaa5a0bffa/layer_0-40.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/65eb9b4d577c40688b3eb8a107ce2ade/layer_0-39.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/2ef225f51b03425fbc9dea589900b8c2/layer_0-38.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/28/378d52a6b5bd48bfa2069bfbee287620/layer_0-37.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/19/f9466a8290154288a163b487ae339c21/layer_0-24.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/19/33363272783b48578b477032689c56df/layer_0-23.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/19/8ff2928c35bb48d58ce17c5da14cb244/layer_0-22.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/19/5befea39ca4f41758a66fab5d8aaaa32/layer_0-21.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/19/b8d9f4a07c474d26ac83bf467c2fa1be/layer_0-20.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2022/11/19/9d4c16bbc5ea4c9196c0e099f24b39fa/layer_0-19.svg" alt=""  class="image-component"/></div>
+            <div class="page"><img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2020/11/09/9b664bf422138f915d671e870b05e68c/asset-177.png" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/07/15/07d5dbea3ca4ba714517be547c2da1fc/quote-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Chief risk officer
+Major insurance company</p>
+<p class="text-component">The accommodation of large data sets, highly demanding algorithms and the hardware for instant computational resources make the cloud ideal for large-scale data analysis.</p>
+<p class="text-component">ENGAGE WITH CUSTOMERS AS THEY WANT YOU TO</p>
+<p class="text-component">Elevate the customer experience with tools for managing individual debit needs.</p>
+<p class="text-component">Allow customers to control where, on what and how much a card is used.</p>
+<p class="text-component">Offer a seamless and fully configurable environment through an intuitive user interface.</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2020/11/10/d7ebcb274eb14eaac29ca8fc655b8995/secure-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/11/c4e17f8519543c13a5ce32d578aef7d7/processed-svg-deliver-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/11/d6f9673936bc1cd088775d881ba1c357/processed-svg-time-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/11/c803b7cb7665ee7e40bf0a218d278af2/processed-svg-exclamation-point-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">6</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/08/07/56c96467752936300b41e8913486abec/fis-c-rgb.png" alt=""  class="image-component"/>
+<p class="text-component">TRANSFORMING DEBIT CARD PAYMENTS FOR A NEW GENERATION</p>
+<p class="text-component">Things are looking up. But there’s more than one kind of cloud service to consider.</p>
+<p class="text-component">Let’s be clear: younger generations want an integrated digital experience. 
+
+So, to get all that lifetime value from Millennials and Gen Z, you can’t just stitch together disparate tools like chatbots and SMS. These need to work in harmony with other service channels as part of a well-connected whole.
+
+When customers can’t complete a process digitally from end to end, having to call a contact center is a major inconvenience. 
+
+Who needs the aggravation when there could be seamless integration? </p>
+<p class="text-component">Managed cloud services give you the power and scalability of a sophisticated actuarial modeling and risk management platform, but reduce the challenges, costs and risks of provisioning infrastructure and managing the underlying IT.</p>
+<p class="text-component">Did you know?</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/15/259165c8add3dc45d8efa294a9c4e9c0/processed-svg-alert-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/14/9e0211031b4ab164e85c4b3e3af9680f/gettyimages-1256108262.jpg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/07/15/07d5dbea3ca4ba714517be547c2da1fc/quote-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/07/15/07d5dbea3ca4ba714517be547c2da1fc/quote-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Hand every aspect of complex modeling technology to an expert provider and you'll reep the benefits:</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/08/07/56c96467752936300b41e8913486abec/fis-c-rgb.png" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/14/6052e3838db3e78a37e8c5b13e049d68/close-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/ad1d1c050615431978e4ff1873d2afb1/home-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/ad1d1c050615431978e4ff1873d2afb1/home-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">PROVIDE CUSTOMER SELF-SERVICE TOOLS</p>
+<p class="text-component">Add new features and functions easily and accelerate innovation with the latest capabilities.</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2020/11/10/d7ebcb274eb14eaac29ca8fc655b8995/secure-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/15/5f2204c37a520b2c0f90048c54d649b1/processed-svg-image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/15/82d537efa5cf9efafbd22e79c7bbe1d4/processed-svg-image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2023/12/21/5c1f9b3865306b06ec43944d4a5a27a8/image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2020/11/10/d7ebcb274eb14eaac29ca8fc655b8995/secure-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/15/7c565f9383dfe70703941e4096353b8b/image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2023/12/21/5c1f9b3865306b06ec43944d4a5a27a8/image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/15/a76be1a1815f6d2996915d7e6cff1861/image.svg" alt=""  class="image-component"/></div>
+            <div class="page"><img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2020/11/09/9b664bf422138f915d671e870b05e68c/asset-177.png" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/07/15/07d5dbea3ca4ba714517be547c2da1fc/quote-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">EVOLVE YOUR WORKING ENVIRONMENT</p>
+<p class="text-component">30%</p>
+<p class="text-component">43%</p>
+<p class="text-component">David Elliott
+Architecture manager for financial services, Amazon Web Services</p>
+<p class="text-component">For insurers, the question isn’t "if" (they will migrate existing applications to the cloud) – it’s how fast they can move and what are they going to move first?</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2020/11/12/127c1ecea307165e8107c6af4e3a33af/exclamation-point-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">5</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/08/07/56c96467752936300b41e8913486abec/fis-c-rgb.png" alt=""  class="image-component"/>
+<p class="text-component">TRANSFORMING DEBIT CARD PAYMENTS FOR A NEW GENERATION</p>
+<p class="text-component">Are you ready to join the highest flyers?</p>
+<p class="text-component">Provide a single, comprehensive user interface for multiple activities: debit, ATM, fraud, reports, card processing and customer self-service.</p>
+<p class="text-component">As an insurance risk manager, where do you stand on the cloud? </p>
+<p class="text-component">Fragmented systems, spreadsheets and data don’t just stop you from getting actionable insights; they hinder your ability to solve customers’ problems.
+
+Solutions should be simple to deliver as proactively as possible. But when you run multiple systems, it can take too long to implement and activate new features.
+
+Then you’re left with a convoluted environment that frustrates employees and customers alike.</p>
+<p class="text-component">But beyond lockdown conditions, there are more reasons than ever to run your organization’s most powerful systems in the cloud.</p>
+<p class="text-component">In 2020, unprecedented global circumstances have shown us all the benefits of hosted IT for business continuity and remote working. </p>
+<p class="text-component">Did you know?</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/14/d4a6d8da4b707a414649221be6e35ee2/alert-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/09/22/e69aabc3934cd12630db723cf18b1f9b/gettyimages-1169108801.jpg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/07/15/07d5dbea3ca4ba714517be547c2da1fc/quote-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/07/15/07d5dbea3ca4ba714517be547c2da1fc/quote-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/08/07/56c96467752936300b41e8913486abec/fis-c-rgb.png" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/14/6052e3838db3e78a37e8c5b13e049d68/close-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/ad1d1c050615431978e4ff1873d2afb1/home-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/ad1d1c050615431978e4ff1873d2afb1/home-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">ADD VALUE WITH AN OPEN ECOSYSTEM</p>
+<p class="text-component">Get user-friendly tools that are easy and fast to onboard, train up on and master.</p>
+<p class="text-component">Add capabilities, not complexities with solutions for loyalty, rewards, fraud detection and dispute resolution, as well as mobile and digital APIs and data tools.</p>
+<p class="text-component">Gain a consolidated view of customer and market data.</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/e1fcb34031178c5d5c28cc4c743c7b99/processed-svg-clock.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/c37527119bfbc41f7032aac29b0673f3/processed-svg-image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/a54c186e6d97edd0ca504f2860f86d7a/processed-svg-image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/18b67251152a99af0668b1ffbbbe9d36/processed-svg-rectangle.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/9d50d975f73c1aea0b7033ba856675ca/processed-svg-rectangle.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/17683c79c88b1eca685a347142b31cf2/processed-svg-path.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/efc8b863908ea0284d91154aa9298160/processed-svg-rectangle.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/028f2f6ccc64e05001a36bf17e393ae7/processed-svg-path.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/e4ebbeab5ba4abb35380ab786c9f8ec6/processed-svg-rectangle.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/927432a69e2c234a49cab24b4cdc336e/processed-svg-path.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/c0c3f003b0be6eea6d21628d1a68615a/processed-svg-path.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/5bdf9994c3d299ebd7df698281c7feac/processed-svg-path.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/6cb4581a30804ef7d1db1bcd46b2eba7/processed-svg-path.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/52c73812a69845a56d8604cdd5e4f963/processed-svg-path.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/0b074798fb99a2c5ab96768ef487a7c3/processed-svg-path.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/51c8f6f8b95dd7f75d35e1b0829c969a/processed-svg-path.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/c25e14eed0e680565eb58b0aa416e22d/processed-svg-path.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/059999f52b9767b4b58331664d2b844e/processed-svg-path.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/104c22cbd3e25d0fab3b2ee93496b0ef/processed-svg-path.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/486fa7e43c51dcab833742026c7d6708/processed-svg-path.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/015693b6f070c7155d0b83ac04f8e010/processed-svg-path.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/e0037e7fa4037e8bba924240cb3eea5c/processed-svg-path.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/640427128639ae8b1294e495e0e7bad2/processed-svg-path.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/0fbed4f618ec01705f98112673fa70f6/processed-svg-path.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/02e1eb3b1dbd652558709efb4c60d909/processed-svg-image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/8293de06d384e8cf0b00669775fd6a7a/image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/1be8956e51cf00d79fd443ce2284241b/processed-svg-image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/810d4055259ca84b612771e26c1d23fc/image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/8293de06d384e8cf0b00669775fd6a7a/image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/6360d8d71d8ee12c97f1932203cf3078/image.svg" alt=""  class="image-component"/></div>
+            <div class="page"><img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2020/11/09/9b664bf422138f915d671e870b05e68c/asset-177.png" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/07/15/07d5dbea3ca4ba714517be547c2da1fc/quote-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Chief risk officer
+Major insurance company</p>
+<p class="text-component">The accommodation of large data sets, highly demanding algorithms and the hardware for instant computational resources make the cloud ideal for large-scale data analysis.</p>
+<p class="text-component">A CHECKLIST FOR MODERN DEBIT PAYMENTS</p>
+<p class="text-component">Elevate the customer experience with tools for managing individual debit needs.</p>
+<p class="text-component">Allow customers to control where, on what and how much a card is used.</p>
+<p class="text-component">Offer a seamless and fully configurable environment through an intuitive user interface.</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2020/11/10/d7ebcb274eb14eaac29ca8fc655b8995/secure-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/18a3cd1c39ceec2aa7c1a8c924edcbe0/processed-svg-deliver-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2020/11/10/fce8f00174c6195d0b3140412d1059ba/time-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2020/11/12/127c1ecea307165e8107c6af4e3a33af/exclamation-point-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">6</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/08/07/56c96467752936300b41e8913486abec/fis-c-rgb.png" alt=""  class="image-component"/>
+<p class="text-component">TRANSFORMING DEBIT CARD PAYMENTS FOR A NEW GENERATION</p>
+<p class="text-component">Things are looking up. But there’s more than one kind of cloud service to consider.</p>
+<p class="text-component">Make sure you’re ready to understand, evolve and engage with a payments platform that offers:</p>
+<p class="text-component">Managed cloud services give you the power and scalability of a sophisticated actuarial modeling and risk management platform, but reduce the challenges, costs and risks of provisioning infrastructure and managing the underlying IT.</p>
+<p class="text-component">Did you know?</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/14/d4a6d8da4b707a414649221be6e35ee2/alert-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/14/9e0211031b4ab164e85c4b3e3af9680f/gettyimages-1256108262.jpg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/07/15/07d5dbea3ca4ba714517be547c2da1fc/quote-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/07/15/07d5dbea3ca4ba714517be547c2da1fc/quote-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Hand every aspect of complex modeling technology to an expert provider and you'll reep the benefits:</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/08/07/56c96467752936300b41e8913486abec/fis-c-rgb.png" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/14/6052e3838db3e78a37e8c5b13e049d68/close-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/ad1d1c050615431978e4ff1873d2afb1/home-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/ad1d1c050615431978e4ff1873d2afb1/home-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">WHAT MAKES AN IDEAL DEBIT PAYMENTS PARTNER?</p>
+<p class="text-component">Add new features and functions easily and accelerate innovation with the latest capabilities.</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2020/11/10/d7ebcb274eb14eaac29ca8fc655b8995/secure-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/1141be2a2ce03dba329b7a7549b3788d/processed-svg-image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/87d36ea0805863eb833a8025c480c620/processed-svg-image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/db621c2767744b8b23398b40d8448174/processed-svg-image.svg" alt=""  class="image-component"/>
+<p class="text-component">A hybrid cloud approach</p>
+<p class="text-component">Decide where your core sits most safely and functions best: in the mainframe or a private or public cloud.</p>
+<p class="text-component">Increase agility, the user experience and the transparency of your bank’s inner workings.</p>
+<p class="text-component">Open architecture</p>
+<p class="text-component">Improve your speed to market and easily switch capabilities on and off.</p>
+<p class="text-component">Componentized technology</p>
+<p class="text-component">Pay only for the functions you need, as and when you need them.</p>
+<p class="text-component">Pricing based on use</p>
+<p class="text-component">Integrate easily with new technologies and make your platforming a working developer sandbox.</p>
+<p class="text-component">API connectivity</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/a7695727c4007384f6955af59a363e03/gettyimages-1352104216-170667a.jpg" alt=""  class="image-component"/>
+<p class="text-component">Turn your debit strategy into action with a technology vendor that can help you:</p>
+<p class="text-component">Eliminate technical complexity and cost uncertainty</p>
+<p class="text-component">Deliver a single strategic solution</p>
+<p class="text-component">Reduce costs through automation</p>
+<p class="text-component">Drive digital transformation in the cloud</p>
+<p class="text-component">Continually improve functionality</p>
+<p class="text-component">Achieve the highest level of global compliance</p>
+<p class="text-component">Integrate best-of-breed third-party solutions</p>
+<p class="text-component">Meet your needs and keep you ahead of change</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/7d41622e2669e90c44a60414fa50a190/processed-svg-image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/651be42fd1d82298d91d71180fcdcc76/image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/f923faa456b588fe618976889dc83b4f/processed-svg-image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/3396f04974f3cab91628774560cd9922/image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/2f72042349171d005a4f324f7300a8d8/processed-svg-image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/7cc561902fde5eb7bee2f89897ed06c1/image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/651be42fd1d82298d91d71180fcdcc76/image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/44895e1b0eea70417ab7bb0b3cb0f732/image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/3396f04974f3cab91628774560cd9922/image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/67e67d10d648576b194536aac73700f8/image.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/16/a7695727c4007384f6955af59a363e03/gettyimages-1352104216-170667a.jpg" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Get all the modern answers with FIS</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/17/82af6f17efb20af8566616e05aed80b6/gettyimages-656297373.jpg" alt=""  class="image-component"/>
+<p class="text-component">7</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/08/07/56c96467752936300b41e8913486abec/fis-c-rgb.png" alt=""  class="image-component"/>
+<p class="text-component">TRANSFORMING DEBIT CARD PAYMENTS FOR A NEW GENERATION</p>
+<p class="text-component">Your modern debit strategy starts here. With FIS® Payments One Debit Suite, debit card management is all set for the next generation of account holders – and your latest wave of growth.</p>
+<p class="text-component">WELCOME TO A NEW WAY TO PROCESS DEBIT CARDS</p>
+<p class="text-component">Learn more</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/08/07/56c96467752936300b41e8913486abec/fis-c-rgb.png" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/11/72d2c7849ee643cd44f2335c797bdddf/processed-svg-next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/11/f821b152c7673aeb1550d63d6af767e1/processed-svg-home-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/11/501dd34e453eea2316226f05e4908604/processed-svg-prev-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/26/af78f798beea5be60dee8920bd3229a1/processed-svg-next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/26/d5c9def98b978cc9d0c8197cc2a314c0/processed-svg-home-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/26/3fd61060c199edb9d236c603dc05261d/processed-svg-prev-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2024/01/17/82af6f17efb20af8566616e05aed80b6/gettyimages-656297373.jpg" alt=""  class="image-component"/></div>
+            <div class="page"><img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/20/267f389b9b52e5785eefc9ed1209de4c/4.png" alt=""  class="image-component"/>
+<p class="text-component">©2024 FIS FIS and the FIS logo are trademarks or registered trademarks of FIS or its subsidiaries in the U.S. and/or other countries. Other parties’ marks are the property of their respective owners. 2762962</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2020/09/16/f35a90709cfbdfb6db14d6aedabb3571/fis-lockup.png" alt=""  class="image-component"/>
+<p class="text-component">linkedin.com/company/fis</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2020/09/16/34534f26ebb733f75e08b2873d4bad39/linkedin-icon.png" alt=""  class="image-component"/>
+<p class="text-component">twitter.com/fisglobal</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2020/09/16/9abe018e99fdbd089a7f0ae73be3d40c/twitter-icon.png" alt=""  class="image-component"/>
+<p class="text-component">www.fisglobal.com</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2020/09/16/7af1abc0e6881c81f363833f67bbf0b8/computer-icon.png" alt=""  class="image-component"/>
+<p class="text-component">About FIS</p>
+<p class="text-component">FIS is a leading provider of technology solutions for merchants, banks and capital markets firms globally. Our more than 55,000 people are dedicated to advancing the way the world pays, banks and invests by applying our scale, deep expertise and data-driven insights. We help our clients use technology in innovative ways to solve business-critical challenges and deliver superior experiences for their customers. Headquartered in Jacksonville, Florida, FIS is a Fortune 500® company and is a member of Standard & Poor’s 500® Index.</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/ad1d1c050615431978e4ff1873d2afb1/home-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/ad1d1c050615431978e4ff1873d2afb1/home-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/06/e60016ba850669852dbd4ffeb093c13b/next-icon.svg" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/18/789a3da0482369ee8bd6aa55033e024f/facebook.png" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/18/26b3b7ca0bc312956f181fbf31f56269/twitter.png" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/18/11baeec44f25a8198bfc646235eb79f0/linkedin.png" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2021/10/18/f7ec7ea08cfab46ee2a6166818c8d60b/email.png" alt=""  class="image-component"/>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2019/08/07/56c96467752936300b41e8913486abec/fis-c-rgb.png" alt=""  class="image-component"/>
+<p class="text-component">Insurance Risk Management without Compromise</p>
+<img src="https://media-s3-us-east-1.ceros.com/fis-global/images/2020/09/16/7af1abc0e6881c81f363833f67bbf0b8/computer-icon.png" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
 </body>
 </html>
